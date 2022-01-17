@@ -1,7 +1,9 @@
 <h2>自分の登録済みルーム一覧</h2>
 <div class = "reserve">
   <% if @room.user_id == current_user.id %>
-    <!--ルーム画像-->
+
+
+
     <p>ルーム名: <%= @room.name %> </p>
     <p>ルーム紹介: <%= @room.introduction %></p>
     <p>料金: <%= @room.price %></p>
@@ -11,20 +13,22 @@
 <%= link_to "ルーム新規登録", [:new_room] %>
 
 <h2>ルーム予約</h2>
-<%= form_with model: @reservation  do |r| %>
+<%= render"shared/error", obj: @reservation %>
+<%= notice %>
+<%= form_with model: @reservation, url: new_reservation_path, method: :get ,local: true do |r| %>
   <%= "¥#{@room.price} / 日" %><br>
   <%= r.label :check_in ,"チェックイン" %>
   <%= r.date_field :check_in %><br>
   <%= r.label :check_out ,"チェックアウト" %>
-  <%= r.date_field :check_out  %><br>
+  <%= r.date_field :check_out %><br>
   <%= r.label :customer,"人数" %>
-  <%= r.number_field :customer %><br>
+  <%= r.number_field :customer, min: 1 %><br>
   <%= r.hidden_field :room_id, value: @room.id %>
-  <%= r.hidden_field :total_days, value: @reservation.total_days %>
-  <%= r.hidden_field :total_amount, value: @reservation.total_amount %>
+  <%= r.hidden_field :user_id, value: current_user.id %>
   <div>
     <ul>
       <li><%= r.submit "予約を確認する" %></li>
+      <li> <%= link_to "戻る", :rooms %></li>
     </ul>
   </div>
 <% end %>
