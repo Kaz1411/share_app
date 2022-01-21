@@ -1,4 +1,11 @@
 <h2>登録したルーム一覧</h2>
+
+<% if flash[:notice] %>
+  <div class="flash">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
 <table>
   <thead>
   <tr>
@@ -14,7 +21,9 @@
   <% @rooms.each do |room| %>
     <% if room.user_id == current_user.id %>
       <tr>
-        <!--room_image-->
+        <% if room.image.present? %>
+          <td><%= image_tag room.image.variant(resize:'100x100'), clss: "rooms_icon" %></td>
+        <% end %>
         <td><%= link_to room.name , room %></td>
         <td><%= room.introduction %></td>
         <td><%= room.price %></td>
