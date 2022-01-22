@@ -1,8 +1,9 @@
-.show_room_reserve{
+.show_room_reserve {
   display: flex;
   margin-top: 20px;
 }
-.room_show{
+
+.room_show {
   width: 62%;
   height: 100%;
   background-color: #ffffff;
@@ -10,43 +11,50 @@
   padding: 20px 0 20px 40px;
   margin-left: 20px;
 }
-.show_reserve{
+
+.show_reserve {
   float: right;
 }
-.room_photo_intro{
+
+.room_photo_intro {
   display: flex;
   margin: 20px 0 30px 20px;
   padding-bottom: 10px;
 }
-.room_photo_intro img{
+
+.room_photo_intro img {
   border-radius: 50px;
   margin-right: 60px;
 }
-#room_names{
+
+#room_names {
   margin-bottom: 20px;
-  font-family: 'Osaka',sans-serif;
+  font-family: 'Osaka', sans-serif;
   font-size: 25px;
   color: #131308;
 }
-.room-information{
+
+.room-information {
   border-top: 1px rgb(5, 3, 3) solid;
   border-bottom: 1px rgb(19, 19, 8) solid;
   padding: 20px;
 }
 
-.show_reserve{
+.show_reserve {
   width: 20%;
   height: 100%;
   background-color: #3ba7be;
   border: 5px rgb(19, 19, 8);
-  padding: 0 15px 10px 15px ;
+  padding: 0 15px 10px 15px;
   margin-left: 20px;
 }
-.show_reserve p{
+
+.show_reserve p {
   font-size: 30px;
   font-weight: bold;
 }
-.reservation_day{
+
+.reservation_day {
   width: 100%;
   height: 35px;
   font-size: large;
@@ -54,14 +62,16 @@
   margin-bottom: 20px;
   padding-left: 10px;
 }
-.reservation_num{
+
+.reservation_num {
   width: 100%;
   height: 35px;
   font-size: large;
   color: rgb(82, 82, 82);
   margin-bottom: 20px;
 }
-#if_reserve_btn{
+
+#if_reserve_btn {
   width: 100%;
   height: 40px;
   font-size: small;
@@ -71,25 +81,29 @@
   margin-bottom: 10px;
   border: #fff;
 }
-#if_reserve_btn:hover{
+
+#if_reserve_btn:hover {
   background-color: rgb(39, 70, 145);
 }
-#return_room_index_btn{
+
+#return_room_index_btn {
   width: 100%;
   height: 40px;
   padding: 10px 70px;
   letter-spacing: 1px;
   text-decoration: none;
-  color:rgb(83, 82, 82);
+  color: rgb(83, 82, 82);
   background-color: #213dc9;
   border-radius: 3px;
   margin-bottom: 20px;
 }
-#return_room_index_btn:hover{
+
+#return_room_index_btn:hover {
   background-color: #213dc9;
 }
-#return_room_index{
-  font-size:small;
+
+#return_room_index {
+  font-size: small;
   padding-left: 50px;
   text-decoration: none;
   color: #000;

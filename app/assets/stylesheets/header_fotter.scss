@@ -1,54 +1,65 @@
-html{
+html {
   min-height: 100%;
   position: relative;
 }
-.header{
+
+.header {
   height: 70px;
   width: 100%;
-  background-color:black;
-  position:relative;
+  background-color: black;
+  position: relative;
 
 }
-.nonline{
+
+.nonline {
   text-decoration: none;
 }
-.top{
+
+.top {
   display: flex;
   height: 70px;
   justify-content: space-between;
   margin: 0 30px;
 }
-.header_log{
+
+.header_log {
   display: flex;
   height: 70px;
 
 
 }
+
 .search input[type="text"] {
   width: 180px;
   height: 40px;
   font-size: medium;
   border-radius: 3px;
 }
-.search{
+
+.search {
   display: contents;
   align-items: center;
 }
-.area_search{
+
+.area_search {
   margin-top: 15px;
 }
-.keyword{
+
+.keyword {
   margin-left: 5px;
   margin-top: 15px;
 }
-.btn{
+
+.btn {
   display: none;
 }
-.unsign-menus{
+
+.unsign-menus {
   display: flex;
   margin-top: 25px
 }
-.login{
+
+.login {
   color: #fff;
   font-size: medium;
   margin-right: 15px;
@@ -56,10 +67,12 @@ html{
   border-radius: 5px;
   background-color: rgb(33, 61, 201);
 }
-.login:hover{
+
+.login:hover {
   background-color: blue;
 }
-.new{
+
+.new {
   font-size: medium;
   margin-right: 30px;
   padding: 13px;
@@ -67,36 +80,44 @@ html{
   background-color: rgba(72, 70, 70, 0.81);
   color: #fff;
 }
-.new:hover{
+
+.new:hover {
   background-color: rgb(56, 55, 55);
 }
-.header_user{
+
+.header_user {
   align-items: center;
   margin-left: 80px;
   justify-content: space-between;
   display: flex;
 }
-.user-name{
+
+.user-name {
   margin-right: 20px;
   height: 70px;
 }
-.user-name p{
+
+.user-name p {
   color: rgb(255, 255, 255);
   font-size: large;
 
   margin-top: 25px;
 
 }
-#user_icon{
+
+#user_icon {
   margin-top: 6px;
 }
+
 #user_icon img {
-  border-radius:50px;
+  border-radius: 50px;
 }
-.menu{
+
+.menu {
   margin-left: 1230px;
 }
-#menus{
+
+#menus {
   width: fit-content;
   position: absolute;
   display: none;
@@ -110,23 +131,24 @@ html{
 
 }
 
-#menus li{
+#menus li {
   margin-bottom: 15px;
   margin-top: 10px;
   font-size: large;
 
 }
 
-.footer{
+.footer {
   width: 100%;
   bottom: 0;
   height: 5em;
   position: absolute;
   background-color: black;
 }
-.footer_memo{
+
+.footer_memo {
   color: #fff;
   text-align: center;
-  margin-top:30px ;
+  margin-top: 30px;
   font-size: small;
 }

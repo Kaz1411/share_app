@@ -1,6 +1,7 @@
-h2{
+h2 {
   margin-top: 60px;
 }
+
 .caption {
   margin-left: 250px;
   padding: 20px 20px 6px 20px;
@@ -11,11 +12,13 @@ h2{
   letter-spacing: 2px;
   font-size: large;
 }
-#new_rooms{
+
+#new_rooms {
   color: rgb(19, 19, 8);
   text-decoration: none;
 }
-.box{
+
+.box {
   width: 63%;
   height: 100%;
   background-color: #fff;
@@ -31,36 +34,33 @@ h2{
   padding: 30px;
   margin-left: 50px;
   margin-top: 10px;
-  border-collapse:collapse
+  border-collapse: collapse
 }
-.room-register tr{
+
+.room-register tr {
   border-bottom: 1px rgb(19, 19, 8) solid;
 }
-.room-register th{
+
+.room-register th {
   letter-spacing: 1px;
   font-family: sans-serif;
 }
-.room-register textarea{
+
+.room-register textarea {
   width: 600px;
   height: 100px;
   margin-bottom: 30px;
   margin-top: 20px;
-  font-size:15px;
+  font-size: 15px;
 }
 
-.room-register input[type="file"]{
+.room-register input[type="file"] {
   margin-bottom: 25px;
   margin-top: 30px;
 
 }
-.room-register input[type="number"]{
-  width: 600px;
-  height: 40px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  font-size: medium;
-}
-.room-register input[type="text"]{
+
+.room-register input[type="number"] {
   width: 600px;
   height: 40px;
   margin-bottom: 30px;
@@ -68,7 +68,15 @@ h2{
   font-size: medium;
 }
 
-.require{
+.room-register input[type="text"] {
+  width: 600px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+.require {
   float: right;
   padding: 4px 5px 4px 4px;
   background-color: #f33737;
@@ -77,6 +85,7 @@ h2{
   margin: 3px 60px 5px 3px;
   border-radius: 5px;
 }
+
 .room-submit {
   display: flex;
   align-items: center;
@@ -84,6 +93,7 @@ h2{
   margin-bottom: 40px;
   margin-top: 20px;
 }
+
 #submit-btn {
   width: 120px;
   height: 40px;
@@ -95,10 +105,12 @@ h2{
   border-radius: 3px;
   border: #fff;
 }
-#submit-btn:hover{
+
+#submit-btn:hover {
   background-color: rgb(39, 70, 145);
 }
-#room-return{
+
+#room-return {
   width: 120px;
   height: 40px;
   padding: 10px;
@@ -109,6 +121,7 @@ h2{
 
   border-radius: 3px;
 }
-#room-return:hover{
+
+#room-return:hover {
   background-color: #53a2c4;
 }

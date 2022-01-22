@@ -1,29 +1,34 @@
-.search_page{
+.search_page {
   padding: 30px 5px 30px 25px;
 }
-.count_result{
-  margin-top:0;
+
+.count_result {
+  margin-top: 0;
   padding-bottom: 30px;
   padding-top: 20px;
   font-size: large;
 }
-.result{
+
+.result {
   display: flex;
   flex-wrap: wrap;
 
 }
-.result_display{
+
+.result_display {
   margin-right: 30px;
   margin-bottom: 20px;
   padding-bottom: 30px;
   border: 1px #000 solid;
   background-color: #fff;
 }
-#search_name{
+
+#search_name {
   padding-left: 15px;
   padding-top: 10px;
 }
-#search_name p{
+
+#search_name p {
   width: fit-content;
   font-family: sans-serif;
   font-weight: bold;
@@ -31,18 +36,20 @@
   font-size: 20px;
 }
 
-#search_address{
+#search_address {
   padding-left: 15px;
-  padding-top:10px;
+  padding-top: 10px;
   font-size: medium;
   font-weight: bold;
 
 }
-#search_price{
+
+#search_price {
   float: right;
   padding-right: 15px;
 }
-#search_price p{
+
+#search_price p {
   width: fit-content;
   font-family: sans-serif;
   font-weight: bold;
