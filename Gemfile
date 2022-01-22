@@ -60,3 +60,11 @@ gem 'devise'
 gem 'mini_magick'
 
 gem 'image_processing'
+
+gem 'jquery-rails'
+
+gem 'kaminari'
+
+gem 'devise-i18n'
+
+gem 'devise-i18n-views'

@@ -1,0 +1,114 @@
+h2{
+  margin-top: 60px;
+}
+.caption {
+  margin-left: 250px;
+  padding: 20px 20px 6px 20px;
+  background-color: #fff;
+  border: 5px #131308;
+  border-bottom: none;
+  z-index: 1;
+  letter-spacing: 2px;
+  font-size: large;
+}
+#new_rooms{
+  color: rgb(19, 19, 8);
+  text-decoration: none;
+}
+.box{
+  width: 63%;
+  height: 100%;
+  background-color: #fff;
+  padding-top: 20px;
+  margin: 0 0 0 250px;
+  border: 5px #ffffff;
+
+}
+
+.room-register {
+  border-collapse: separate;
+  border-spacing: 30px 20px;
+  padding: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+  border-collapse:collapse
+}
+.room-register tr{
+  border-bottom: 1px rgb(19, 19, 8) solid;
+}
+.room-register th{
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.room-register textarea{
+  width: 600px;
+  height: 100px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size:15px;
+}
+
+.room-register input[type="file"]{
+  margin-bottom: 25px;
+  margin-top: 30px;
+
+}
+.room-register input[type="number"]{
+  width: 600px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: medium;
+}
+.room-register input[type="text"]{
+  width: 600px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+.require{
+  float: right;
+  padding: 4px 5px 4px 4px;
+  background-color: #f33737;
+  color: #fff;
+  font-size: small;
+  margin: 3px 60px 5px 3px;
+  border-radius: 5px;
+}
+.room-submit {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+#submit-btn {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: large;
+  letter-spacing: 1px;
+  background-color: rgb(33, 61, 201);
+  border-radius: 3px;
+  border: #fff;
+}
+#submit-btn:hover{
+  background-color: rgb(39, 70, 145);
+}
+#room-return{
+  width: 120px;
+  height: 40px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: rgb(19, 19, 8);
+  background-color: #3ba7be;
+
+  border-radius: 3px;
+}
+#room-return:hover{
+  background-color: #53a2c4;
+}

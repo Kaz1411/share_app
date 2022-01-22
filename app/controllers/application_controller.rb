@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :configure_account_update_parameters, if: :devise_controller?
 
   before_action :authenticate_user!
 
@@ -9,20 +10,23 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     added_attrs = [ :email, :username, :password, :password_confirmation ]
     devise_parameter_sanitizer.permit :sign_up, keys: [:name]
-    devise_parameter_sanitizer.permit :account_update, keys: [:name, :introduction, :image]
+    devise_parameter_sanitizer.permit :account_update, keys: [:name, :introduction,:email, :image,:password]
     devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
   end
-  # ログイン後、home#topに移動する
+  def configure_account_update_parameters
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :introduction,:email ,:image,:password])
+  end
+
+  # ログイン後、home#topに移動
   def after_sign_in_path_for(resource)
     root_path
   end
-  # ログアウト後、home#topに移動する
+  # ログアウト後、home#topに移動
   def after_sign_out_path_for(resource)
     root_path
   end
   def set_current_user
     @current_user = User.find_by(id: session[:user_id])
-
   end
 
 end
