@@ -1,8 +1,9 @@
 <div class="show_room_reserve">
   <div class="room_show">
     <% if @room.user_id == current_user.id %>
-      <% if @room.image.present? %>
+      <% if @room.image.presence %>
         <%= image_tag @room.image.variant(resize: '800x500'), class: "room_image" %><br>
+        <%else %>
         <div class="room_photo_intro">
           <%= link_to image_tag(@room.user.image.variant(resize: '70x70')), users_show_path, class: "user_photo" %>
       <% end %>
